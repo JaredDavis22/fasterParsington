@@ -6,7 +6,17 @@ expressions faster, but some of the code is less readable as a result.
 - If you want clean, readable code and good performance, use Parsington.
 - If you want the fastest possible expression evaluation, try FasterParsington.
 
---- original README.md below ---
+This is not in Maven Central yet. Run mvn install from source before using.
+```xml
+<dependency>
+  <groupId>com.davisprogramming</groupId>
+  <artifactId>fasterparsington</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
+</dependency>
+```
+
+
+--- original README.md below (with ~~strike through~~ denoting changes) ---
 
 # Parsington
 
@@ -43,9 +53,9 @@ Expression parsers are as old as the hills; what makes this one different?
   synthesis of Java and MATLAB syntax, work well. But if you need something
   else, you can define your own unary and binary operators with whatever
   symbols, precedence and associativity you desire.
-* __Clean, well-commented codebase with unit tests.__ Import the source into
+* ~~__Clean , well-commented codebase with unit tests.__ Import the source into
   your favorite IDE and watch Parsington in action by putting a breakpoint
-  [here](src/main/java/org/scijava/parsington/ParseOperation.java#L70-L72).
+  [here](src/main/java/org/scijava/parsington/ParseOperation.java#L70-L72).~~
 
 ## History
 
@@ -59,14 +69,8 @@ only tumbleweed. So Parsington was born, and all our problems are now over!
 
 ## Usage
 
-In your POM `<dependencies>`:
-```xml
-<dependency>
-  <groupId>org.scijava</groupId>
-  <artifactId>parsington</artifactId>
-  <version>3.0.0</version>
-</dependency>
-```
+~~In your POM `<dependencies>`:~~
+See Above
 
 ### Postfix queues
 
@@ -132,15 +136,9 @@ Object result = new DefaultTreeEvaluator().evaluate("6.5*7.8^2.3");
 
 Alternately, you can pass an already-parsed queue or tree to `evaluate`.
 
-### Interactive console
+### ~~Interactive console~~
 
-There is also an [interactive console
-shell](src/main/java/org/scijava/parsington/Main.java) you can play with.
-
-Run it easily using [jgo](https://github.com/apposed/jgo):
-```
-jgo org.scijava:parsington
-```
+~~There is also an [interactive console
 
 Or run from source, after cloning this repository:
 ```shell
