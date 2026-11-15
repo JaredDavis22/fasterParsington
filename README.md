@@ -53,7 +53,7 @@ Expression parsers are as old as the hills; what makes this one different?
   synthesis of Java and MATLAB syntax, work well. But if you need something
   else, you can define your own unary and binary operators with whatever
   symbols, precedence and associativity you desire.
-* ~~__Clean , well-commented codebase with unit tests.__ Import the source into
+* ~~__Clean, well-commented codebase with unit tests.__ Import the source into
   your favorite IDE and watch Parsington in action by putting a breakpoint
   [here](src/main/java/org/scijava/parsington/ParseOperation.java#L70-L72).~~
 
@@ -70,7 +70,7 @@ only tumbleweed. So Parsington was born, and all our problems are now over!
 ## Usage
 
 ~~In your POM `<dependencies>`:~~
-See Above
+See the dependency snippet at the top of this README.
 
 ### Postfix queues
 
@@ -136,11 +136,11 @@ Object result = new DefaultTreeEvaluator().evaluate("6.5*7.8^2.3");
 
 Alternately, you can pass an already-parsed queue or tree to `evaluate`.
 
-### ~~Interactive console~~
+### Interactive console
 
-~~There is also an [interactive console~~
+There is also an [interactive console shell](src/main/java/org/scijava/parsington/Main.java) you can play with.
 
-Or run from source, after cloning this repository:
+Run it from source, after cloning this repository:
 ```shell
 mvn
 java -jar target/fasterparsington-*-SNAPSHOT.jar
