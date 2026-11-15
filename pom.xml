@@ -9,16 +9,18 @@
 		<relativePath />
 	</parent>
 
-	<artifactId>parsington</artifactId>
-	<version>3.3.1-SNAPSHOT</version>
+	<!-- Own coordinates, so this fork never collides with org.scijava:parsington. -->
+	<groupId>com.davisprogramming</groupId>
+	<artifactId>fasterparsington</artifactId>
+	<version>4.0.0-SNAPSHOT</version>
 
-	<name>Parsington</name>
-	<description>A general-purpose mathematical expression parser, which converts infix expression strings into postfix queues and/or syntax trees.</description>
-	<url>https://github.com/scijava/parsington</url>
+	<name>FasterParsington</name>
+	<description>A performance-focused fork of Parsington, the SciJava mathematical expression parser, which converts infix expression strings into postfix queues and/or syntax trees.</description>
+	<url>https://github.com/JaredDavis22/fasterParsington</url>
 	<inceptionYear>2015</inceptionYear>
 	<organization>
-		<name>SciJava</name>
-		<url>https://scijava.org/</url>
+		<name>Jared Davis</name>
+		<url>https://github.com/JaredDavis22</url>
 	</organization>
 	<licenses>
 		<license>
@@ -29,11 +31,10 @@
 
 	<developers>
 		<developer>
-			<id>ctrueden</id>
-			<name>Curtis Rueden</name>
-			<url>https://imagej.net/people/ctrueden</url>
+			<id>JaredDavis22</id>
+			<name>Jared Davis</name>
+			<url>https://github.com/JaredDavis22</url>
 			<roles>
-				<role>founder</role>
 				<role>lead</role>
 				<role>developer</role>
 				<role>debugger</role>
@@ -45,8 +46,10 @@
 	</developers>
 	<contributors>
 		<contributor>
-			<name>Jared Davis</name>
-			<properties><id>JaredDavis22</id></properties>
+			<name>Curtis Rueden</name>
+			<url>https://imagej.net/people/ctrueden</url>
+			<roles><role>founder</role></roles>
+			<properties><id>ctrueden</id></properties>
 		</contributor>
 		<contributor>
 			<name>Jan Eglinger</name>
@@ -61,27 +64,23 @@
 
 	<mailingLists>
 		<mailingList>
-			<name>SciJava</name>
-			<subscribe>https://groups.google.com/group/scijava</subscribe>
-			<unsubscribe>https://groups.google.com/group/scijava</unsubscribe>
-			<post>scijava@googlegroups.com</post>
-			<archive>https://groups.google.com/group/scijava</archive>
+			<name>None</name>
 		</mailingList>
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:https://github.com/scijava/parsington</connection>
-		<developerConnection>scm:git:git@github.com:scijava/parsington</developerConnection>
+		<connection>scm:git:https://github.com/JaredDavis22/fasterParsington</connection>
+		<developerConnection>scm:git:git@github.com:JaredDavis22/fasterParsington</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/scijava/parsington</url>
+		<url>https://github.com/JaredDavis22/fasterParsington</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/scijava/parsington/issues</url>
+		<url>https://github.com/JaredDavis22/fasterParsington/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>GitHub Actions</system>
-		<url>https://github.com/scijava/parsington/actions</url>
+		<url>https://github.com/JaredDavis22/fasterParsington/actions</url>
 	</ciManagement>
 
 	<properties>
@@ -90,6 +89,7 @@
 		<scijava.jvm.version>8</scijava.jvm.version>
 
 		<license.licenseName>bsd_2</license.licenseName>
+		<!-- Keep the original project name and copyright owners: the BSD-2 license requires retaining the notice. -->
 		<license.projectName>Parsington: the SciJava mathematical expression parser.</license.projectName>
 		<license.copyrightOwners>Parsington developers.</license.copyrightOwners>
 
