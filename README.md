@@ -6,7 +6,17 @@ expressions faster, but some of the code is less readable as a result.
 - If you want clean, readable code and good performance, use Parsington.
 - If you want the fastest possible expression evaluation, try FasterParsington.
 
---- original README.md below ---
+This is not in Maven Central yet. Run mvn install from source before using.
+```xml
+<dependency>
+  <groupId>com.davisprogramming</groupId>
+  <artifactId>fasterparsington</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
+</dependency>
+```
+
+
+--- original README.md below (with ~~strike through~~ denoting changes) ---
 
 # Parsington
 
@@ -28,7 +38,7 @@ Infix input: `(-b + sqrt(b^2 - 4*a*c)) / (2*a)`
 Expression parsers are as old as the hills; what makes this one different?
 
 * __No dependencies.__
-* __[Available on Maven Central](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.scijava%22%20AND%20a%3A%22parsington%22).__
+* ~~__[Available on Maven Central](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.scijava%22%20AND%20a%3A%22parsington%22).__~~
 * __Permissive BSD-2 license.__ See [LICENSE.txt](LICENSE.txt).
 * __Separation of concerns.__ Parsington's parser stands alone, giving you a
   postfix queue or syntax tree from your infix expression, which you can then
@@ -43,9 +53,9 @@ Expression parsers are as old as the hills; what makes this one different?
   synthesis of Java and MATLAB syntax, work well. But if you need something
   else, you can define your own unary and binary operators with whatever
   symbols, precedence and associativity you desire.
-* __Clean, well-commented codebase with unit tests.__ Import the source into
+* ~~__Clean , well-commented codebase with unit tests.__ Import the source into
   your favorite IDE and watch Parsington in action by putting a breakpoint
-  [here](src/main/java/org/scijava/parsington/ParseOperation.java#L70-L72).
+  [here](src/main/java/org/scijava/parsington/ParseOperation.java#L70-L72).~~
 
 ## History
 
@@ -59,14 +69,8 @@ only tumbleweed. So Parsington was born, and all our problems are now over!
 
 ## Usage
 
-In your POM `<dependencies>`:
-```xml
-<dependency>
-  <groupId>org.scijava</groupId>
-  <artifactId>parsington</artifactId>
-  <version>3.0.0</version>
-</dependency>
-```
+~~In your POM `<dependencies>`:~~
+See Above
 
 ### Postfix queues
 
@@ -132,20 +136,14 @@ Object result = new DefaultTreeEvaluator().evaluate("6.5*7.8^2.3");
 
 Alternately, you can pass an already-parsed queue or tree to `evaluate`.
 
-### Interactive console
+### ~~Interactive console~~
 
-There is also an [interactive console
-shell](src/main/java/org/scijava/parsington/Main.java) you can play with.
-
-Run it easily using [jgo](https://github.com/apposed/jgo):
-```
-jgo org.scijava:parsington
-```
+~~There is also an [interactive console~~
 
 Or run from source, after cloning this repository:
 ```shell
 mvn
-java -jar target/parsington-*-SNAPSHOT.jar
+java -jar target/fasterparsington-*-SNAPSHOT.jar
 ```
 
 Simple example invocations with the console's default evaluator:
