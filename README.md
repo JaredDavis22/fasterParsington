@@ -1,5 +1,12 @@
-[![Maven Central](https://img.shields.io/maven-central/v/org.scijava/parsington.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.scijava%22%20AND%20a%3A%22parsington%22)
-[![Build Status](https://github.com/scijava/parsington/actions/workflows/build.yml/badge.svg)](https://github.com/scijava/parsington/actions/workflows/build.yml)
+# FasterParsington
+
+This fork is a performance-focused version of Parsington. It evaluates
+expressions faster, but some of the code is less readable as a result.
+
+- If you want clean, readable code and good performance, use Parsington.
+- If you want the fastest possible expression evaluation, try FasterParsington.
+
+--- original README.md below ---
 
 # Parsington
 
